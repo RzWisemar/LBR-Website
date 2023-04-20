@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <img src="assets/img/logo.png" height="55px" width="55px" alt="logo">
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">A PROPOS</a></li>
+                    <li><a href="#">RÉALISATIONS</a></li>
+                    <li><a href="#">SERVICES</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+    <div style="height: 1000px">
+        <section id="contact">
+            <div class="contact-box">
+              <div class="contact-links">
+                <h2>CONTACT</h2>
+                <div class="links">
+                  <div class="link">
+                    <a><img src="https://i.postimg.cc/m2mg2Hjm/linkedin.png" alt="linkedin"></a>
+                  </div>
+                  <div class="link">
+                    <a><img src="https://i.postimg.cc/YCV2QBJg/github.png" alt="github"></a>
+                  </div>
+                  <div class="link">
+                    <a><img src="https://i.postimg.cc/W4Znvrry/codepen.png" alt="codepen"></a>
+                  </div>
+                  <div class="link">
+                    <a><img src="https://i.postimg.cc/NjLfyjPB/email.png" alt="email"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="contact-form-wrapper">
+                <form>
+                  <div class="form-item">
+                    <input type="text" name="sender" required>
+                    <label>Name:</label>
+                  </div>
+                  <div class="form-item">
+                    <input type="text" name="email" required>
+                    <label>Email:</label>
+                  </div>
+                  <div class="form-item">
+                    <textarea class="" name="message" required></textarea>
+                    <label>Message:</label>
+                  </div>
+                  <button class="submit-btn">Send</button>  
+                </form>
+              </div>
+            </div>
+          </section>
+    </div>
+      <!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="assets/js/index.js"></script>
+
+    <!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+        $(window).scroll(function () {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
+    
+</body>
+</html>
