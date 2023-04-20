@@ -366,6 +366,7 @@ hr.dashed {
 .myH2 {
 	text-align:center;
 	font-size: 4rem;
+    color: white;
 }
 .myP {
 	text-align: justify;
@@ -464,33 +465,34 @@ span {
 }
 
 
-/* divider */
-
-.colour-block {
-    background:#2e4872;
-
-    color:#fff;
-    padding-bottom: 10px;
-  }
 
 
-  /*----------------*/
-/*  SCALLOP down  */
-/*----------------*/
-.scallop-down{
-    height:100px;
-    width:100%;
-    background: -webkit-gradient(radial, 50% 0, 10, 50% 0, 40, from(#2e4872), color-stop(0.49, #2e4872), color-stop(0.51, #fff), to(white));
-  -webkit-background-size: 49px 100%;
-  }
-  
-  
-  /*----------------*/
-  /*  SCALLOP up    */
-  /*----------------*/
-  .scallop-up{
-    height:100px;
-    width:100%;
-    background: -webkit-gradient(radial, 50% 100%, 10, 50% 100%, 40, from(#2e4872), color-stop(0.49, #2e4872), color-stop(0.51, #fff), to(white));
-  -webkit-background-size: 49px 100%;
-  }
+
+
+
+  .First div {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.First img {
+    max-width: 100%;
+    height: auto;
+}
+
+.First p {
+    font-size: 1.9em;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .First div {
+        display: block;
+        margin: 20px auto;
+    }
+
+    .First p {
+        font-size: 1.9em;
+    }
+}
